@@ -1,0 +1,20 @@
+{
+    "name": "atcis-whatsapp-server",
+    "version": "1.0.0",
+    "description": "Baileys-based WhatsApp microservice for ATCIS",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js",
+        "restart": "npx kill-port 3001 && node server.js"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.98.0",
+        "@whiskeysockets/baileys": "^6.7.2",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "pino": "^9.3.2",
+        "qrcode": "^1.5.4"
+    }
+}
